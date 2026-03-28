@@ -1,11 +1,6 @@
----
-
 # 📊 SALES & DEMAND FORECASTING PROJECT – DETAILED NOTES
-
 # 1️⃣ Project Objective
-
 The goal of this project is to:
-
 * Forecast future sales using historical data
 * Capture trend and seasonality patterns
 * Use machine learning (Random Forest) for prediction
@@ -142,7 +137,6 @@ MAPE = \frac{1}{n} \sum \left| \frac{Actual - Predicted}{Actual} \right| \times 
 | 5–10%  | Very Good |
 | 10–20% | Good      |
 | >20%   | Poor      |
-
 # 8️⃣ Recursive 30-Day Forecasting
 This is the most important advanced part.
 Instead of using fixed lag values, we:
@@ -185,7 +179,6 @@ model.feature_importances_
 Shows which features influence prediction most.
 Example:
 If Lag_1 importance is highest → Yesterday’s sales matter most.
-
 Business Insight:
 Understand drivers of sales.
 # 🔟 Why This Project Is Strong
