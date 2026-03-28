@@ -26,13 +26,10 @@ data["Rolling_7"] = data["Sales"].rolling(7).mean()
 data.dropna(inplace=True)
 # 4️⃣ Train-Test Split (Time-Based)
 train_size = int(len(data) * 0.8)
-
 train = data.iloc[:train_size]
 test = data.iloc[train_size:]
-
 X_train = train.drop(["Date", "Sales"], axis=1)
 y_train = train["Sales"]
-
 X_test = test.drop(["Date", "Sales"], axis=1)
 y_test = test["Sales"]
 # 5️⃣ Model Training
